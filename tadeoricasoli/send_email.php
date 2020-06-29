@@ -1,9 +1,10 @@
 <?php
-$destino = "ricasolit@gmail.com";
-$nombre = $_POST["contactName"];
-$email = $_POST["contactEmail"];
-$mensaje = $_POST["contactMessage"];
-$contenido = "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nMensaje: " . $mensaje;
-mail($destino, "Contacto", $contenido);
-/*header("Location:gracias.html");*/
+$destination = "ricasolit@gmail.com";
+$name        = $_POST["contactName"];
+$email       = $_POST["contactEmail"];
+$message     = $_POST["contactMessage"];
+$content     = "Name: " . $name . "Email: " . $email . "Message: " . $message;
+mail($destination, "Contact", $content);
+
+header("Location: http://www.tadeoricasoli.com");
 ?>
